@@ -698,8 +698,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d531832f5ae2b984e8643d5ba8189e2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ziplama_gucu: 80
-  egilme_hizi: 0.3
+  ziplama_gucu: 150
+  egilme_hizi: 0.1
 --- !u!1 &1559298132
 GameObject:
   m_ObjectHideFlags: 0
