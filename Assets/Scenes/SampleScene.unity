@@ -699,7 +699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ziplama_gucu: 150
-  egilme_hizi: 0.1
+  egilme_hizi: 0.2
 --- !u!1 &1559298132
 GameObject:
   m_ObjectHideFlags: 0

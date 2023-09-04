@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class bird : MonoBehaviour
@@ -28,7 +29,7 @@ public class bird : MonoBehaviour
         {
             rigi.velocity = Vector2.zero;
 
-            rigi.velocity = Vector2.up *Time.deltaTime * ziplama_gucu;
+            rigi.velocity = Vector2.up.normalized *Time.deltaTime * ziplama_gucu ;
 
             transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 60.0f);
         }
