@@ -617,7 +617,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!212 &1462818983
 SpriteRenderer:
@@ -698,8 +698,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d531832f5ae2b984e8643d5ba8189e2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ziplama_gucu: 150
+  ziplama_gucu: 40
   egilme_hizi: 0.2
+  restartHizi: 0.2
 --- !u!1 &1559298132
 GameObject:
   m_ObjectHideFlags: 0

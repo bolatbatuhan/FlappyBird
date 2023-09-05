@@ -8,13 +8,22 @@ public class bird : MonoBehaviour
     Rigidbody2D rigi;
     public float ziplama_gucu;
     public float egilme_hizi;
-
+    public float restartHizi = 1f;
+    bool gameHasEnded = false;
+    
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (gameHasEnded == false)
+        {
+            gameHasEnded = true;
+            Invoke("Restart", restartHizi);
+        }
+    }
+    void Restart()
+    {
         SceneManager.LoadScene(0);
     }
-
 
 
     void Start()
@@ -29,7 +38,7 @@ public class bird : MonoBehaviour
         {
             rigi.velocity = Vector2.zero;
 
-            rigi.velocity = Vector2.up.normalized *Time.deltaTime * ziplama_gucu ;
+            rigi.AddForce ( Vector2.up * ziplama_gucu);
 
             transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 60.0f);
         }

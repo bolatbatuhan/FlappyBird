@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class pipe : MonoBehaviour
 {
     admin adm;
+    
     void Start()
     {
         float rast = Random.Range(-2.36f, -3.60f);
@@ -20,7 +22,10 @@ public class pipe : MonoBehaviour
         {
             adm.add_skor(10);
             Destroy(gameObject);
+            
         }
         transform.Translate(-1.3f*Time.deltaTime,0,0);
+
+        
     }
 }
