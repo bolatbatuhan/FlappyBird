@@ -38,7 +38,7 @@ public class bird : MonoBehaviour
         {
             rigi.velocity = Vector2.zero;
 
-            rigi.AddForce ( Vector2.up * ziplama_gucu);
+            rigi.AddForce ( Vector2.up * ziplama_gucu, ForceMode2D.Impulse);
 
             transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 60.0f);
         }
